@@ -5,8 +5,16 @@ import {styleTags, tags as t} from "@lezer/highlight"
 import {parser as baseParser} from "./sql.grammar"
 import {tokens, Dialect, tokensFor, SQLKeywords, SQLTypes, dialect} from "./tokens"
 import {completeFromSchema, completeKeywords} from "./complete"
+import {parseMixed} from "@lezer/common";
+import {parser as jsParser} from "@codemirror/lang-js";
 
 let parser = baseParser.configure({
+  wrap:parseMixed(node=>{
+    if(node.name==='String' || node.name==='JsTag'){
+      return {parser: jsParser}
+    }
+    return null
+  }),
   props: [
     indentNodeProp.add({
       Statement: continuedIndent()
