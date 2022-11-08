@@ -51,9 +51,9 @@
     serve-static "^1.14.1"
     typescript "^4.2.3"
 
-"@codemirror/lang-js@git+ssh://git@github.com:dashcomb/lang-js.git":
+"@codemirror/lang-js@git://github.com/dashcomb/lang-js.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:dashcomb/lang-js.git#39a88fc05ad609ed79f6fbc4b8a20d5a65b82d9b"
+  resolved "git://github.com/dashcomb/lang-js.git#39a88fc05ad609ed79f6fbc4b8a20d5a65b82d9b"
   dependencies:
     "@codemirror/autocomplete" "^6.0.0"
     "@codemirror/language" "^6.0.0"
