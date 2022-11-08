@@ -25,9 +25,16 @@ element {
   Type |
   Operator |
   Punctuation |
+  JsTag { StartJsTag JsText* EndJsTag } |
   Parens { ParenL element* ParenR } |
   Braces { BraceL element* BraceR } |
   Brackets { BracketL element* BracketR }
+}
+
+@tokens {
+  StartJsTag[closedBy="EndJsTag"] { "{{" }
+  EndJsTag { "}}" }
+  JsText { (![}])+ }
 }
 
 @external tokens tokens from "./tokens" {

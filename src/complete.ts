@@ -157,6 +157,6 @@ export function completeKeywords(keywords: {[name: string]: number}, upperCase: 
     type: keywords[keyword] == Type ? "type" : keywords[keyword] == Keyword ? "keyword" : "variable",
     boost: -1
   }))
-  return ifNotIn(["QuotedIdentifier", "SpecialVar", "String", "LineComment", "BlockComment", "."],
+  return ifNotIn(["QuotedIdentifier", "SpecialVar", "String", "LineComment", "BlockComment", ".","JsTag"],
                  completeFromList(completions))
 }
