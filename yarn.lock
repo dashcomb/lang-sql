@@ -24,13 +24,13 @@
     js-tokens "^4.0.0"
 
 "@codemirror/autocomplete@^6.0.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@codemirror/autocomplete/-/autocomplete-6.3.0.tgz#217e16bb6ce63374ec7b9d2a01d007ba53ff0aff"
-  integrity sha512-4jEvh3AjJZTDKazd10J6ZsCIqaYxDMCeua5ouQxY8hlFIml+nr7le0SgBhT3SIytFBmdzPK3AUhXGuW3T79nVg==
+  version "6.3.3"
+  resolved "https://registry.yarnpkg.com/@codemirror/autocomplete/-/autocomplete-6.3.3.tgz#f9dba421b9a0d83ecf89a06def37a96e6afb593a"
+  integrity sha512-8MGqPuKvE0W0XjabDYX3BFJNJRsYFAYpDBol+YCg6o5t2JyoDeoMYrqRMVnJv1B1FBgNAkvdDVrNrVE/7c9qvQ==
   dependencies:
     "@codemirror/language" "^6.0.0"
     "@codemirror/state" "^6.0.0"
-    "@codemirror/view" "^6.0.0"
+    "@codemirror/view" "^6.5.0"
     "@lezer/common" "^1.0.0"
 
 "@codemirror/buildhelper@^0.1.5":
@@ -51,9 +51,9 @@
     serve-static "^1.14.1"
     typescript "^4.2.3"
 
-"@codemirror/lang-js@dashcomb/lang-js":
-  version "1.0.0"
-  resolved "https://codeload.github.com/dashcomb/lang-js/tar.gz/94a38438c6ac4b90d8b654be31e0c983ad44eb75"
+"@codemirror/lang-js@git+https://github.com/dashcomb/lang-js.git":
+  version "1.0.4"
+  resolved "git+https://github.com/dashcomb/lang-js.git#c2e22a02a5c14e5559c0a4e53ff683407552cf0f"
   dependencies:
     "@codemirror/autocomplete" "^6.0.0"
     "@codemirror/language" "^6.0.0"
@@ -63,9 +63,9 @@
     "@lezer/lr" "^1.0.0"
 
 "@codemirror/language@^6.0.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@codemirror/language/-/language-6.3.0.tgz#141c715e1fce5f6dcca3b1b984ed8f03f583dd5c"
-  integrity sha512-6jOE5DEt6sKD46SXhn3xPbBehn+l48ACcA6Uxs2k+E2YNH9XGF5WdGMTYr2DlggfK4h0QZBK6zEb5S7lkTriWA==
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/@codemirror/language/-/language-6.3.1.tgz#1d61f33aa5de9aa74a713ee1f5ce600adc74df6b"
+  integrity sha512-MK+G1QKaGfSEUg9YEFaBkMBI6j1ge4VMBPZv9fDYotw7w695c42x5Ba1mmwBkesYnzYFBfte6Hh9TDcKa6xORQ==
   dependencies:
     "@codemirror/state" "^6.0.0"
     "@codemirror/view" "^6.0.0"
@@ -74,17 +74,17 @@
     "@lezer/lr" "^1.0.0"
     style-mod "^4.0.0"
 
-"@codemirror/state@^6.0.0":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-6.1.2.tgz#182d46eabcc17c95508984d6add5a5a641dcd517"
-  integrity sha512-Mxff85Hp5va+zuj+H748KbubXjrinX/k28lj43H14T2D0+4kuvEFIEIO7hCEcvBT8ubZyIelt9yGOjj2MWOEQA==
+"@codemirror/state@^6.0.0", "@codemirror/state@^6.1.4":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-6.1.4.tgz#2b654ae233ac4f41ee89ce095509ea35ecdf1031"
+  integrity sha512-g+3OJuRylV5qsXuuhrc6Cvs1NQluNioepYMM2fhnpYkNk7NgX+j0AFuevKSVKzTDmDyt9+Puju+zPdHNECzCNQ==
 
-"@codemirror/view@^6.0.0":
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/@codemirror/view/-/view-6.4.1.tgz#7526bd473b8e5e5f7bade834121864b8f7d2649f"
-  integrity sha512-QdBpD6E5HYx6YFXXhqwrRyQ83w7CxWZnchM4QpWBVkkmV7/oJT8N+yz2KAi2iRaLObc/aOf7C2RCQTO2yswF8A==
+"@codemirror/view@^6.0.0", "@codemirror/view@^6.5.0":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@codemirror/view/-/view-6.5.1.tgz#f4533cd796f0569508822d0012bee9a15dc4b3f9"
+  integrity sha512-xBKP8N3AXOs06VcKvIuvIQoUlGs7Hb78ftJWahLaRX909jKPMgGxR5XjvrawzTTZMSTU3DzdjDNPwG6fPM/ypQ==
   dependencies:
-    "@codemirror/state" "^6.0.0"
+    "@codemirror/state" "^6.1.4"
     style-mod "^4.0.0"
     w3c-keyname "^2.2.4"
 
@@ -109,17 +109,17 @@
     "@lezer/common" "^1.0.0"
 
 "@lezer/javascript@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@lezer/javascript/-/javascript-1.0.2.tgz#79b5c2c77e27322a0ae516395a193574b9ad3f5e"
-  integrity sha512-IjOVeIRhM8IuafWNnk+UzRz7p4/JSOKBNINLYLsdSGuJS9Ju7vFdc82AlTt0jgtV5D8eBZf4g0vK4d3ttBNz7A==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@lezer/javascript/-/javascript-1.1.1.tgz#ac3560a9d3a2cebe81f078423e8da83e3958daa4"
+  integrity sha512-bPsN0nria42StUTU6AZmYFDm/jDXAwMWT1x2EuiNfwVEZlJGJezie1r1wJIvEtw6zoRph3fo0adLxiis1mgh/Q==
   dependencies:
     "@lezer/highlight" "^1.0.0"
     "@lezer/lr" "^1.0.0"
 
 "@lezer/lr@^1.0.0":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@lezer/lr/-/lr-1.2.4.tgz#380b8586c5578ca5d1187afd2284d51af103951e"
-  integrity sha512-L/52/oMJBFXXx8qBYF4UgktLP2geQ/qn5Fd8+5L/mqlLLCB9+qdKktFAtejd9FdFMaFx6lrP5rmLz4sN3Kplcg==
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@lezer/lr/-/lr-1.2.5.tgz#e9088164a711690596f17378665e0554157c9b03"
+  integrity sha512-f9319YG1A/3ysgUE3bqCHEd7g+3ZZ71MWlwEc42mpnLVYXgfJJgtu1XAyBB4Kz8FmqmnFe9caopDqKeMMMAU6g==
   dependencies:
     "@lezer/common" "^1.0.0"
 
@@ -824,9 +824,9 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
 selenium-webdriver@^4.0.0-beta.3:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.6.0.tgz#b4e27959e94618b398358b26efe2e64debb22dfd"
-  integrity sha512-HIH/+J+V7l/lbSRSOwyLcpjezg9CV4DLo1pBhP9aphuMlf/PJXEDwC/A/Ht2bFc1AqQppFBGvClYcuMzyO6tRw==
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/selenium-webdriver/-/selenium-webdriver-4.6.1.tgz#ac66867206542a40c24b5a44f4ccbae992e962dc"
+  integrity sha512-FT8Dw0tbzaTp8YYLuwhaCnve/nw03HKrOJrA3aUmTKmxaIFSP4kT2R5fN3K0RpV5kbR0ZnM4FGVI2vANBvekaA==
   dependencies:
     jszip "^3.10.0"
     tmp "^0.2.1"
@@ -967,9 +967,9 @@ toidentifier@1.0.1:
   integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
 
 typescript@^4.2.3:
-  version "4.8.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
-  integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.3.tgz#3aea307c1746b8c384435d8ac36b8a2e580d85db"
+  integrity sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==
 
 util-deprecate@~1.0.1:
   version "1.0.2"

@@ -2,7 +2,7 @@ import { LRLanguage, LanguageSupport } from '@codemirror/language';
 import { Extension } from '@codemirror/state';
 import { Completion, CompletionSource } from '@codemirror/autocomplete';
 
-declare type SQLDialectSpec = {
+type SQLDialectSpec = {
     /**
     A space-separated list of keywords for the dialect.
     */

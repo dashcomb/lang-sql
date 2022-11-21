@@ -31,7 +31,7 @@
     "@codemirror/language": "^6.0.0",
     "@codemirror/state": "^6.0.0",
     "@lezer/lr": "^1.0.0",
-    "@codemirror/lang-js": "dashcomb/lang-js"
+    "@codemirror/lang-js": "git+https://github.com/dashcomb/lang-js.git"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^0.1.5"
