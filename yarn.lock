@@ -51,17 +51,6 @@
     serve-static "^1.14.1"
     typescript "^4.2.3"
 
-"@codemirror/lang-js@git+https://github.com/dashcomb/lang-js.git":
-  version "1.0.4"
-  resolved "git+https://github.com/dashcomb/lang-js.git#c2e22a02a5c14e5559c0a4e53ff683407552cf0f"
-  dependencies:
-    "@codemirror/autocomplete" "^6.0.0"
-    "@codemirror/language" "^6.0.0"
-    "@codemirror/state" "^6.0.0"
-    "@lezer/highlight" "^1.0.0"
-    "@lezer/javascript" "^1.0.2"
-    "@lezer/lr" "^1.0.0"
-
 "@codemirror/language@^6.0.0":
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@codemirror/language/-/language-6.3.1.tgz#1d61f33aa5de9aa74a713ee1f5ce600adc74df6b"
@@ -580,6 +569,17 @@ jszip@^3.10.0:
     pako "~1.0.2"
     readable-stream "~2.3.6"
     setimmediate "^1.0.5"
+
+"lang-js@https://github.com/dashcomb/lang-js":
+  version "1.0.5"
+  resolved "https://github.com/dashcomb/lang-js#c0916ad66a050eb95432b21a5e15b088038aeb71"
+  dependencies:
+    "@codemirror/autocomplete" "^6.0.0"
+    "@codemirror/language" "^6.0.0"
+    "@codemirror/state" "^6.0.0"
+    "@lezer/highlight" "^1.0.0"
+    "@lezer/javascript" "^1.0.2"
+    "@lezer/lr" "^1.0.0"
 
 lie@~3.3.0:
   version "3.3.0"
