@@ -27,11 +27,11 @@
   "license": "MIT",
   "dependencies": {
     "@codemirror/autocomplete": "^6.0.0",
+    "@codemirror/lang-js": "https://github.com/dashcomb/lang-js",
     "@codemirror/language": "^6.0.0",
     "@codemirror/state": "^6.0.0",
     "@lezer/highlight": "^1.0.0",
-    "@lezer/lr": "^1.0.0",
-    "lang-js": "https://github.com/dashcomb/lang-js"
+    "@lezer/lr": "^1.0.0"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^0.1.5"
