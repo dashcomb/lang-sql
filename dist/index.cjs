@@ -500,7 +500,8 @@ function completeKeywords(keywords, upperCase) {
 
 let parser = parser$1.configure({
     wrap: common.parseMixed(node => {
-        if (node.name === 'String' || node.name === 'JsTag') {
+        console.log(node.name);
+        if (node.name === 'JsText') {
             return { parser: javascript.parser };
         }
         return null;

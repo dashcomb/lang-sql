@@ -496,7 +496,8 @@ function completeKeywords(keywords, upperCase) {
 
 let parser = /*@__PURE__*/parser$1.configure({
     wrap: /*@__PURE__*/parseMixed(node => {
-        if (node.name === 'String' || node.name === 'JsTag') {
+        console.log(node.name);
+        if (node.name === 'JsText') {
             return { parser: parser$2 };
         }
         return null;
