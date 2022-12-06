@@ -6,13 +6,17 @@ import {parser as baseParser} from "./sql.grammar"
 import {tokens, Dialect, tokensFor, SQLKeywords, SQLTypes, dialect} from "./tokens"
 import {completeFromSchema, completeKeywords} from "./complete"
 import {parseMixed} from "@lezer/common";
-import {parser as jsParser} from "@lezer/javascript"
+import {parser as javascriptParser} from "@lezer/javascript"
+import {parser as jsParser} from "@codemirror/lang-js"
 
 let parser = baseParser.configure({
   wrap:parseMixed(node=>{
     console.log(node.name)
-    if(node.name==='JsText'){
+    if(node.name==='QuotedIdentifier' || node.name==='String'){
       return {parser: jsParser}
+    }
+    if(node.name==='JsText'){
+      return {parser: javascriptParser}
     }
     return null
   }),
