@@ -31,7 +31,8 @@
     "@codemirror/language": "^6.0.0",
     "@codemirror/state": "^6.0.0",
     "@lezer/highlight": "^1.0.0",
-    "@lezer/lr": "^1.0.0"
+    "@lezer/lr": "^1.0.0",
+    "@lezer/javascript": "^1.0.2"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^0.1.5"

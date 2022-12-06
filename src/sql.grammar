@@ -8,6 +8,7 @@
 @skip { whitespace | LineComment | BlockComment }
 
 element {
+  JsTag { "{{" JsText* "}}" } |
   String |
   Number |
   Bool |
@@ -25,26 +26,20 @@ element {
   Type |
   Operator |
   Punctuation |
-  JsTag |
   Parens { ParenL element* ParenR } |
   Braces { BraceL element* BraceR } |
   Brackets { BracketL element* BracketR }
 }
 
 @tokens {
-  String {
-      '"' (![\\\n"] | "\\" _)* '"'? |
-      "'" (![\\\n'] | "\\" _)* "'"?
-  }
   JsText { (![}])+ }
-  JsTag { "{{" JsText* "}}" }
-  @precedence { JsTag, String }
 }
 
 @external tokens tokens from "./tokens" {
   whitespace
   LineComment
   BlockComment
+  String
   Number
   Bool
   Null
