@@ -497,7 +497,6 @@ function completeKeywords(keywords, upperCase) {
 
 let parser = /*@__PURE__*/parser$1.configure({
     wrap: /*@__PURE__*/parseMixed(node => {
-        console.log(node.name);
         if (node.name === 'QuotedIdentifier' || node.name === 'String') {
             return { parser: parser$2 };
         }

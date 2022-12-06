@@ -501,7 +501,6 @@ function completeKeywords(keywords, upperCase) {
 
 let parser = parser$1.configure({
     wrap: common.parseMixed(node => {
-        console.log(node.name);
         if (node.name === 'QuotedIdentifier' || node.name === 'String') {
             return { parser: langJs.parser };
         }

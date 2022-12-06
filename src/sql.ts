@@ -11,7 +11,6 @@ import {parser as jsParser} from "@codemirror/lang-js"
 
 let parser = baseParser.configure({
   wrap:parseMixed(node=>{
-    console.log(node.name)
     if(node.name==='QuotedIdentifier' || node.name==='String'){
       return {parser: jsParser}
     }
