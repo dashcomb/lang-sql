@@ -25,23 +25,26 @@ element {
   Type |
   Operator |
   Punctuation |
-  JsTag { StartJsTag JsText* EndJsTag } |
+  JsTag |
   Parens { ParenL element* ParenR } |
   Braces { BraceL element* BraceR } |
   Brackets { BracketL element* BracketR }
 }
 
 @tokens {
-  StartJsTag[closedBy="EndJsTag"] { "{{" }
-  EndJsTag { "}}" }
+  String {
+      '"' (![\\\n"] | "\\" _)* '"'? |
+      "'" (![\\\n'] | "\\" _)* "'"?
+  }
   JsText { (![}])+ }
+  JsTag { "{{" JsText* "}}" }
+  @precedence { JsTag, String }
 }
 
 @external tokens tokens from "./tokens" {
   whitespace
   LineComment
   BlockComment
-  String
   Number
   Bool
   Null

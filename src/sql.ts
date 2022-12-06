@@ -10,6 +10,7 @@ import {parser as jsParser} from "@codemirror/lang-js";
 
 let parser = baseParser.configure({
   wrap:parseMixed(node=>{
+    console.log(node.name)
     if(node.name==='String' || node.name==='JsTag'){
       return {parser: jsParser}
     }
