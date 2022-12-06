@@ -10,7 +10,8 @@ import {parser as jsParser} from "@lezer/javascript"
 
 let parser = baseParser.configure({
   wrap:parseMixed(node=>{
-    if(node.name==='String' || node.name==='JsTag'){
+    console.log(node.name)
+    if(node.name==='JsText'){
       return {parser: jsParser}
     }
     return null
